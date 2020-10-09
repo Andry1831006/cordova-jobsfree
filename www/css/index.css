@@ -1,0 +1,194 @@
+* {
+  -webkit-tap-highlight-color: rgba(
+    0,
+    0,
+    0,
+    0
+  ); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  -webkit-touch-callout: none; /* prevent callout to copy image, etc when tap to hold */
+  -webkit-text-size-adjust: none; /* prevent webkit from resizing text to fit */
+  -webkit-user-select: none; /* prevent copy paste, to allow, change 'none' to 'text' */
+  font-family: "Nunito", sans;
+  font-size: 12px;
+  height: 100vh;
+  /* Padding to avoid the "unsafe" areas behind notches in the screen */
+  padding: env(safe-area-inset-top, 0px) env(safe-area-inset-right, 0px)
+    env(safe-area-inset-bottom, 0px) env(safe-area-inset-left, 0px);
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: normal;
+  margin: 0px;
+  overflow: visible;
+  padding: 0px;
+  text-align: center;
+}
+
+input[type="text"],
+input[type="password"] {
+  font-size: 12px;
+}
+
+.btn-custom {
+  background-color: #5ccca5 !important;
+  color: #eeeeee !important;
+}
+
+.dashboard {
+  background-color: rgba(231, 231, 231, 0.6);
+}
+
+.slideshow {
+  position: relative;
+  padding: 0px !important;
+  height: fit-content;
+}
+.slide {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  overflow-x: auto;
+  padding: 0px !important;
+}
+
+.slide .item {
+  min-width: 100%;
+  height: 100%;
+}
+
+.slide .item img {
+  width: 100%;
+}
+
+.btn-slide {
+  position: absolute;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: flex;
+  width: 30%;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: -20px;
+}
+.btn-slide span {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+}
+.btn-slide span:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.login {
+  background-image: url(../img/bg-login.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  background-position: bottom;
+}
+
+.login .form-control:focus {
+  box-shadow: 0 0 0 0.2rem rgba(92, 204, 165, 0.25) !important;
+  border-color: #5ccca5;
+}
+
+.login .form-control {
+  border-color: #5ccca5;
+}
+
+.form-control {
+  padding: 1.5rem 1rem !important;
+}
+
+.btn {
+  padding: 0.75rem 1rem !important;
+  font-size: 0.8rem !important;
+  letter-spacing: 5px;
+}
+
+.action {
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.action .btn-custom {
+  font-size: 0.8rem !important;
+  padding: 8px 10px !important;
+  letter-spacing: 0px;
+  text-transform: none;
+  text-align: left;
+  border-radius: 20px;
+  display: flex;
+  width: 100%;
+}
+
+.action .btn-custom:focus {
+  box-shadow: none;
+}
+
+.action .icon-action {
+  background-color: #eeeeee !important;
+  display: inline-block !important;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.wrapper {
+  display: flex;
+  height: fit-content;
+  padding: 0px !important;
+  overflow-x: auto;
+  margin-top: 5px;
+}
+
+.card-custom {
+  border-radius: 10px !important;
+  min-width: 150px !important;
+  margin-right: 20px;
+}
+
+.card-custom img {
+  border-radius: 10px 10px 0 0 !important;
+}
+
+.card-custom .card-title,
+.card-custom .text-muted,
+.card-custom .card-text {
+  font-size: 0.8rem !important;
+  margin: 2px !important;
+}
+
+.card-custom .card-body {
+  padding: 0.5rem !important;
+}
+.s-link {
+  color: black;
+}
+.s-link:hover {
+  color: black;
+  text-decoration: none;
+}
+.card-custom .card-text {
+  color: #5ccca5;
+  font-weight: 500;
+}
+
+.card-custom .text-muted {
+  font-size: 0.6rem !important;
+}
+
+.underdev img {
+  width: 75% !important;
+  margin-bottom: 1rem;
+}

@@ -12,13 +12,39 @@ body {
   -webkit-touch-callout: none; /* prevent callout to copy image, etc when tap to hold */
   -webkit-text-size-adjust: none; /* prevent webkit from resizing text to fit */
   -webkit-user-select: none; /* prevent copy paste, to allow, change 'none' to 'text' */
-  font-family: "Nunito", sans;
+  font-family: "Nunito", sans-serif !important;
   font-size: 12px;
   height: 100vh;
+  min-width: 360px;
   /* Padding to avoid the "unsafe" areas behind notches in the screen */
   padding: env(safe-area-inset-top, 0px) env(safe-area-inset-right, 0px)
     env(safe-area-inset-bottom, 0px) env(safe-area-inset-left, 0px);
   text-transform: uppercase;
+}
+
+.logo {
+  max-width: 250px;
+}
+
+.custom-nav {
+  width: 100%;
+  height: 3rem;
+  background-color: #525252;
+  border-radius: 1.5rem 1.5rem 0 0;
+}
+
+.custom-nav ul {
+  list-style: none;
+  margin: 0;
+}
+
+.nav-link {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.nav-link img {
+  max-width: 2rem !important;
 }
 
 h1 {
@@ -28,6 +54,7 @@ h1 {
   overflow: visible;
   padding: 0px;
   text-align: center;
+  font-family: "Nunito", sans-serif;
 }
 
 input[type="text"],
@@ -35,12 +62,20 @@ input[type="password"] {
   font-size: 12px;
 }
 
+.text-custom {
+  color: #5ccca5;
+}
+
 .btn-custom {
   background-color: #5ccca5 !important;
   color: #eeeeee !important;
 }
 
-.dashboard {
+.dashboard,
+.order,
+.search,
+.notice,
+.user {
   background-color: rgba(231, 231, 231, 0.6);
 }
 
@@ -95,12 +130,14 @@ input[type="password"] {
   background-position: bottom;
 }
 
-.login .form-control:focus {
+.login .form-control:focus,
+.search .form-control:focus {
   box-shadow: 0 0 0 0.2rem rgba(92, 204, 165, 0.25) !important;
   border-color: #5ccca5;
 }
 
-.login .form-control {
+.login .form-control,
+.search .form-control {
   border-color: #5ccca5;
 }
 
@@ -188,7 +225,96 @@ input[type="password"] {
   font-size: 0.6rem !important;
 }
 
+.underdev {
+  padding-bottom: 3rem;
+}
+
 .underdev img {
   width: 75% !important;
   margin-bottom: 1rem;
+}
+
+/* Order */
+.title {
+  text-transform: none;
+  color: #5ccca5;
+}
+.ct-btn-order button.active {
+  background-color: rgb(231, 231, 231) !important;
+}
+.btn-order {
+  letter-spacing: 0;
+  padding: 0.2rem 1rem !important;
+  background-color: rgba(231, 231, 231, 0.6) !important;
+  color: #525252;
+  font-weight: 700 !important;
+}
+.btn-order:focus {
+  box-shadow: none !important;
+}
+.tab-content {
+  height: fit-content;
+  min-height: 419px;
+  margin-top: 1.5rem;
+}
+.tab-item {
+  background-color: rgb(231, 231, 231);
+  width: 100%;
+  border-radius: 1rem;
+  padding: 10px;
+}
+.wording {
+  height: 100% !important;
+}
+.wording * {
+  margin: 0 !important;
+}
+.tab-item h5 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #5ccca5;
+}
+.tab-item h6 {
+  font-size: 1rem;
+}
+.tab-item h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.tab-item p {
+  text-transform: none;
+  font-size: 0.8rem;
+  margin: 0 !important;
+}
+.img-container {
+  height: 100% !important;
+}
+.tab-item img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+}
+.tab-item:first-child {
+  margin-top: 0 !important;
+}
+.tab-content {
+  margin-bottom: 4rem !important;
+}
+
+/* Search */
+.btn-search {
+  letter-spacing: 0;
+}
+.btn-search:focus {
+  box-shadow: 0 0 0 0.2rem rgba(92, 204, 165, 0.25) !important;
+}
+
+/* Notice */
+.notice .text-notice {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #525252;
+}
+.notice .text-notice span {
+  color: #5ccca5;
 }

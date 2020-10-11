@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta
+      name="viewport"
+      content="initial-scale=1, width=device-width, viewport-fit=cover"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="./fontawesome/all.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <title>Hello World</title>
+  </head>
+  <body class="notice">
+    <div class="container">
+      <h1 class="title text-left font-weight-bolder pt-3">User Profile</h1>
+      <div class="row pt-3">
+        <div class="container">
+          <div class="col-6 mx-auto">
+            <img src="img/default.png" class="img-thumbnail rounded-circle" />
+          </div>
+        </div>
+      </div>
+      <div class="container mb-5">
+        <div class="row"><h6 class="text-custom">Name</h6></div>
+        <div class="row"><p>Nicholas</p></div>
+        <div class="row"><h6 class="text-custom">Birthday</h6></div>
+        <div class="row"><p>01 January 1998</p></div>
+        <div class="row"><h6 class="text-custom">Gender</h6></div>
+        <div class="row"><p>Male</p></div>
+        <div class="row"><h6 class="text-custom">Since</h6></div>
+        <div class="row"><p>01 February 2020</p></div>
+        <div class="row"><h6 class="text-custom">Specialization</h6></div>
+        <div class="row"><p>Logo Design, Vector Art</p></div>
+        <div class="row"><h6 class="text-custom">Completed Jobs</h6></div>
+        <div class="row"><p>3</p></div>
+      </div>
+    </div>
+    <!-- navbar -->
+    <nav class="container fixed-bottom custom-nav">
+      <ul class="d-flex justify-content-between">
+        <li class="nav-item">
+          <a href="dashboard.html" class="nav-link"
+            ><img src="img/icon/home.png"
+          /></a>
+        </li>
+        <li class="nav-item">
+          <a href="order.html" class="nav-link"
+            ><img src="img/icon/order.png"
+          /></a>
+        </li>
+        <li class="nav-item">
+          <a href="search.html" class="nav-link"
+            ><img src="img/icon/search.png"
+          /></a>
+        </li>
+        <li class="nav-item">
+          <a href="notice.html" class="nav-link"
+            ><img src="img/icon/notice.png"
+          /></a>
+        </li>
+        <li class="nav-item">
+          <a href="user.html" class="nav-link"
+            ><img src="img/icon/user.png"
+          /></a>
+        </li>
+      </ul>
+    </nav>
+    <!-- Javascript start here -->
+    <script src="cordova.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/jquery-3.5.1.slim.min.js"></script>
+  </body>
+</html>
